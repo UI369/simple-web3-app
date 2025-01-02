@@ -1,0 +1,21 @@
+.desktopFrame {
+  position: relative;
+  width: 65%;
+  min-height: 100vh;
+  padding: rem(32px) rem(64px) 0 rem(64px);
+}
+
+.desktopImg {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 35%;
+}
+
+.centerLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(48px);
+  margin-bottom: rem(32px);
+}

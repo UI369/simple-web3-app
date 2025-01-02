@@ -1,0 +1,57 @@
+.root {
+  background: var(--mantine-color-dark-7);
+  color: var(--mantine-color-steel-0);
+  border: 1.5px solid var(--mantine-color-steel-2);
+  padding-inline: var(--button-padding-x-xl);
+  height: var(--button-height-md);
+  transition: 150ms ease-in-out;
+
+  &[data-size='xs'] {
+    height: var(--button-height-xs);
+    padding-inline: var(--button-padding-x-xs);
+  }
+
+  &[data-size='sm'] {
+    height: var(--button-height-sm);
+    padding-inline: var(--button-padding-x-xs);
+  }
+  &[data-size='lg'] {
+    height: var(--button-height-lg);
+    padding-inline: rem(42px);
+  }
+
+  &:hover {
+    background: var(--mantine-color-dark-6);
+    border: 1.5px solid var(--mantine-color-steel-1);
+  }
+  &:focus {
+    outline-color: var(--mantine-color-dark-4);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    border: 1.5px solid var(--mantine-color-dark-4);
+    color: var(--mantine-color-dark-3);
+
+    &:hover {
+      background: var(--mantine-color-dark-7);
+      border: 1.5px solid var(--mantine-color-steel-2);
+    }
+  }
+
+  &[data-variant='danger'] {
+    color: var(--mantine-color-red-7);
+    border: 1.5px solid var(--mantine-color-red-5);
+  }
+
+  &[data-variant='ghost-icon'] {
+    border: none;
+    padding-inline: 0;
+    width: fit-content;
+    padding: 0;
+  }
+  &[data-variant='secondary'] {
+    border: 1.5px dashed var(--mantine-color-steel-4);
+    color: var(--mantine-color-steel-2);
+  }
+}

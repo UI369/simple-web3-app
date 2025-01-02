@@ -1,0 +1,80 @@
+.popoverDropdown {
+  background-color: var(--mantine-color-dark-7);
+  border: 1.5px solid var(--mantine-color-steel-2);
+}
+
+.border {
+  border: 1.5px solid var(--mantine-color-steel-2);
+}
+
+.subBorder {
+  border: 1.5px dashed var(--mantine-color-steel-4);
+}
+
+.bigTitle {
+  color: var(--mantine-color-steel-0);
+  font-weight: 900;
+  letter-spacing: -1.2vw;
+  font-size: 14.5vw;
+  text-shadow: 1vw -1vw #323232;
+  line-height: 0.85;
+}
+
+.subTitle {
+  color: var(--mantine-color-steel-0);
+  font-weight: 900;
+  letter-spacing: -0.3vw;
+  font-size: 4vw;
+  text-shadow: 0.35vw -0.35vw #323232;
+  line-height: 0.85;
+}
+
+.sectionText {
+  color: var(--mantine-color-steel-0);
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-shadow: 4px -4px #323232;
+}
+
+.appLink {
+  text-decoration: none;
+  display: block;
+  &:hover {
+    text-decoration: underline;
+  }
+  /* color: var(--mantine-color-steel-2); */
+}
+
+.textButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.notice {
+  height: rem(8px);
+  width: rem(8px);
+  border-radius: 100%;
+  background-color: var(--mantine-color-steel-2);
+  margin-top: rem(4px);
+}
+
+.noticeBlink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--mantine-color-steel-2);
+  }
+  50% {
+    background-color: var(--mantine-color-steel-9);
+  }
+  100% {
+    background-color: var(--mantine-color-steel-2);
+  }
+}
